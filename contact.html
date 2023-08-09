@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    body {
+      background-image: url(../images/header.jpg);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 100vh;
+    }
+
+    @media (max-width: 600px) {
+
+      .navbar-brand {
+        width: 200px;
+      }
+    }
+
+    .navbar {
+      padding-top: 20px;
+      background-color: #f0f0f0;
+      width: 100%;
+      position: relative;
+      z-index: 9;
+    }
+
+    .navimg {
+      width: 100%;
+      height: auto;
+    }
+
+    .container-contact {
+      margin: 60px auto;
+      background-color: rgb(255, 255, 255, 0.9);
+      border-radius: 10px;
+      width: 70%;
+    }
+
+    .contact-main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container-contact h2 {
+      text-align: left;
+    }
+
+    .contact-info {
+      padding: 10px 10px 10px 20px;
+      height: 500px;
+
+    }
+
+    .contact-form {
+      padding-top: 10px;
+      height: 500px;
+    }
+
+    .address-con {
+      padding: 0px;
+    }
+
+    .email-con {
+      padding: 0px;
+    }
+
+    .phone-con {
+      padding: 0px;
+    }
+
+    .bx {
+      font-size: 50px;
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand text-dark" href="./index.html"><img class="navimg" src="./images/logo.png" /></a>
+
+      <!-- menuNavbar Links -->
+      <div class="collapse navbar-collapse" id="menuNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="contactform">
+    <div class="container-contact">
+      <div class="row contact-main">
+        <div class="row">
+          <div class="col-sm-4 col-sm-3 contact-info">
+            <h2>Contact Us</h2>
+            <div class="address-con">
+              <i class='bx bx-current-location'></i>
+              <p>Sitio Bolo- Bolo Quisao Pililla, Rizal, Philippines</p>
+            </div>
+            <hr>
+            <div class="email-con">
+              <i class='bx bxs-envelope'></i>
+              <p>mcalthea@yahoo.com.ph</p>
+            </div>
+            <hr>
+            <div class="phone-con">
+              <i class='bx bxs-phone'></i>
+              <p>:+63 906-027-6112</p>
+            </div>
+
+          </div>
+
+          <div class="col-sm-8 col-sm-3 contact-form">
+            <h2>Get in touch</h2>
+            <form action="https://formsubmit.co/c6b70a5030eb2b329f65cf04d2da52be" method="post">
+              <input type="text" name="_honey" style="display: none;">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="success.html">
+
+              <div class="c-name">
+                <label for="form-name" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="form-name" placeholder="Enter Name" name="Name" required />
+              </div>
+              <div class="c-email">
+                <label for="form-email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="form-email" placeholder="Enter Email" name="Email" required />
+              </div>
+              <div class="c-phone">
+                <label for="number" class="form-label">Phone Number: </label>
+                <input type="text" class="form-control" id="number" placeholder="Enter Name" name="Number" required />
+              </div>
+              <label for="message">Message:</label>
+              <textarea class="form-control" rows="5" id="message" name="Message" required /></textarea>
+              <br>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="reset" class="btn btn-primary">Clear</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- JS Scripts -->
+  <script src="js/jquery.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.esm.js"></script>
+  <script src="js/bootstrap.esm.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

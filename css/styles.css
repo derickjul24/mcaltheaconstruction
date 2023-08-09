@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 60px;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    height: 100vh;
+    width: 100%;
+    /* max-width: 100%; */
+}
+
+.navbar {
+    padding-top: 20px;
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+}
+
+.navimg {
+    width: 100%;
+    height: auto;
+}
+
+/* Main header */
+
+section.mainImg {
+    background-image: url(../images/header.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-nopadding {
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 100vh;
+}
+
+.col-6-md {
+    width: 50%;
+}
+
+.fcenter {
+    align-items: center;
+}
+
+.col-12 {
+    color: white;
+    text-align: right;
+}
+
+
+
+.h3head {
+    display: inline;
+}
+
+/* End Main header */
+
+/* Who */
+
+.object {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Services */
+
+#service1 {
+    padding: 20px 40px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+#service1 div {
+    padding: 20px 40px;
+}
+
+.content-1 {
+    flex: 1;
+    height: auto;
+    order: 1
+}
+
+.content-image1 {
+    flex: 1;
+    order: 2;
+}
+
+.content-image1 img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.con {
+    margin-top: 80px;
+}
+
+.con h1 {
+    text-align: right;
+}
+
+.con p {
+    text-align: right;
+}
+
+#service2 {
+    padding: 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#service2 div {
+    padding: 20px 40px;
+}
+
+.content-2 {
+    flex: 1;
+    order: 2;
+    height: auto;
+
+}
+
+.content-image2 {
+    flex: 1;
+    order: 1;
+
+}
+
+.content-image2 img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.con2 {
+    margin-top: 80px;
+}
+
+.con2 h1 {
+    text-align: left;
+}
+
+.con2 p {
+    text-align: left;
+}
+
+#service3 {
+    padding: 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#service3 div {
+    padding: 20px 40px;
+}
+
+.content-3 {
+    flex: 1;
+    order: 1;
+    height: auto;
+
+}
+
+.content-image3 {
+    flex: 1;
+    order: 2;
+
+}
+
+.content-image3 img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.con3 {
+    margin-top: 80px;
+}
+
+.con3 h1 {
+    text-align: right;
+}
+
+.con3 p {
+    text-align: right;
+}
+
+@media (max-width: 600px) {
+    #service1 {
+        flex-direction: column;
+    }
+
+    #service2 {
+        flex-direction: column;
+    }
+
+    #service3 {
+        flex-direction: column;
+    }
+
+    .container-fluid-proj {
+        flex-direction: column;
+    }
+
+    .navbar-brand {
+        width: 200px;
+    }
+
+    .proj-row-1-2 img {
+        max-width: 100%;
+    }
+
+    .content-1 {
+        order: 2;
+    }
+
+    .content-image1 {
+        order: 1;
+    }
+
+    .content-3 {
+        order: 2;
+    }
+
+    .content-image3 {
+        order: 1;
+    }
+}
+
+/* End of Services */
+
+/* Start of Projects */
+
+
+#projects .container-fluid-header {
+    padding: 10px 40px;
+    margin: 30px;
+
+}
+
+#projects .container-fluid-header h1 {
+    padding-top: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+#projects .container-fluid-main {
+    background-color: #f0f0f0;
+    padding: 20px 20px;
+    width: 100%;
+}
+
+.container-fluid-proj {
+    padding: 0px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.proj-row {
+    position: relative;
+    margin: 5px;
+    height: 300px;
+    width: 100%;
+    flex: 1;
+}
+
+.proj-row img {
+    border-radius: 30px;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.proj-row-text {
+    position: absolute;
+    color: white;
+    bottom: 8px;
+    left: 16px;
+
+}
+
+/* Start of Services */
+
+#services .container-fluid-header {
+    padding: 10px 40px;
+    margin: 40px;
+}
+
+#services .container-fluid-header h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+#services .container {
+    height: auto;
+    display: grid;
+
+}
+
+.our-services {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.our-services ul {
+    padding: 0;
+    margin: 10px;
+}
+
+.our-services ul li {
+    list-style: none;
+    display: inline-block;
+    width: 200px;
+    height: 80px;
+    position: relative;
+    overflow: hidden;
+    cursor: arrow;
+    margin: 15px;
+    transition: .5s;
+}
+
+.serv {
+    width: 80%;
+    height: 100%;
+}
+
+.servico {
+    width: 80%;
+    height: 100%;
+}
+
+.our-services ul li img:nth-child(1) {
+    transform: translateY(0);
+    transition: .5s;
+}
+
+.our-services ul li img:nth-child(2) {
+    transform: translateY(0);
+    transition: .5s;
+}
+
+/*Hover-Section*/
+
+
+.our-services ul li:hover img:nth-child(1) {
+    transform: translateY(-100%);
+    transition: .5s;
+}
+
+.our-services ul li:hover img:nth-child(2) {
+    transform: translateY(-100%);
+    transition: .5s;
+}
+
+/* End of Services */
+
+/* Footer */
+
+
+#footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-container {
+    padding: 5px 13% 20px;
+    background: linear-gradient(#FFE1BE, #eab676);
+    height: auto;
+
+}
+
+.main-footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 3.5rem;
+}
+
+.footer-content {
+    padding: 20px;
+}
+
+.footer-content img {
+    width: 60%;
+    object-fit: cover;
+}
+
+.icons a {
+    font-size: 30px;
+}
+
+.footer-content .add {
+    padding-top: 20px;
+}
+
+.contact {
+    padding: 20px;
+}
+
+.conbutton {
+    margin: 20px 0 0 0;
+}
+
+.rights {
+    text-align: center;
+}
+
+@media (max-width: 1120px) {
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+        gap: 2.5rem;
+    }
+
+    .footer-content img {
+        width: 100%;
+    }
+
+}
